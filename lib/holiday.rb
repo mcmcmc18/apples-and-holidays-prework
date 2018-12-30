@@ -47,7 +47,6 @@ holiday_hash[:winter].values.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
-    season.to_s.capitalize!
      data.each do |holiday, supply|
        array = holiday.to_s.split("_")
        final_holiday = []
