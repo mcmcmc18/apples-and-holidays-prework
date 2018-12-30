@@ -72,6 +72,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   supply_array = []
   holiday_hash.collect do |key, value|
+    data.collect do ||
     if value == "BBQ"
       supply_array.push(value)
     
